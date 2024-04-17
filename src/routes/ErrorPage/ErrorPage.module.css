@@ -1,0 +1,23 @@
+.pagErro {
+  background-color: #ffded7;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.pagErro img{
+    padding-left: 7vh;
+}
+
+.icon {
+  margin: 10px;
+  color: #F97D64;
+}
+
+.text{
+    font-size: 24px;
+    color: #F97D64;
+}
