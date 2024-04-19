@@ -1,11 +1,17 @@
+import { Divider } from "antd";
+
 interface HomeProps {
   cards: React.ReactNode;
+  carousel: React.ReactNode;
 }
 
-const Home: React.FC<HomeProps> = ({ cards }) => {
+const Home: React.FC<HomeProps> = ({ cards, carousel }) => {
   return (
     <div>
-      <h1>Home</h1>
+      <div>
+        <div>{carousel}</div>
+      </div>
+      <Divider />
       <div>{cards}</div>
     </div>
   );

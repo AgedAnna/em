@@ -1,7 +1,7 @@
 import {
+  HomeOutlined,
+  ShoppingOutlined,
   UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
 } from "@ant-design/icons";
 import { Menu } from "antd";
 import Sider from "antd/es/layout/Sider";
@@ -21,15 +21,15 @@ const SideBar = () => {
       }}
       className={style.SideBar}
     >
-      <Menu className={style.menu} mode="inline" defaultSelectedKeys={["4"]}>
-        <Menu.Item key="1" icon={<UserOutlined className={style.itemMenu} />}>
+      <Menu className={style.menu} mode="inline">
+        <Menu.Item key="1" icon={<HomeOutlined className={style.itemMenu} />}>
           <Link to="/" className={style.itemMenu}>
             Home
           </Link>
         </Menu.Item>
         <Menu.Item
           key="2"
-          icon={<VideoCameraOutlined className={style.itemMenu} />}
+          icon={<ShoppingOutlined className={style.itemMenu} />}
         >
           <Link to="/pedidos" className={style.itemMenu}>
             Pedidos

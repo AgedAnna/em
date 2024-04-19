@@ -1,12 +1,13 @@
 import Crud from "../../components/Crud/Crud";
 import Home from "./Home";
 import CardCakes from "./Card";
+import CarouselCakes from "./CarouselBolos";
 
 const IndexHome = () => {
   return (
-    <>
-      <Crud children={<Home cards={<CardCakes />} />} />
-    </>
+    <Crud>
+      <Home carousel={<CarouselCakes />} cards={<CardCakes />} />
+    </Crud>
   );
 };
 
