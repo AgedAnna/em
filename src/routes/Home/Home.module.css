@@ -1,0 +1,13 @@
+.cardsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.cards {
+  width: 240px;
+  margin: 10px;
+  position: relative;
+  z-index: 1;
+}

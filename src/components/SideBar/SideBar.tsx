@@ -1,8 +1,3 @@
-import {
-  HomeOutlined,
-  ShoppingOutlined,
-  UploadOutlined,
-} from "@ant-design/icons";
 import { Menu } from "antd";
 import Sider from "antd/es/layout/Sider";
 import { Link } from "react-router-dom";
@@ -22,22 +17,64 @@ const SideBar = () => {
       className={style.SideBar}
     >
       <Menu className={style.menu} mode="inline">
-        <Menu.Item key="1" icon={<HomeOutlined className={style.itemMenu} />}>
+        <Menu.Item
+          key="1"
+          icon={
+            <span
+              className="material-symbols-outlined"
+              style={{ color: "#ffff", fontSize: "20px" }}
+            >
+              cake
+            </span>
+          }
+        >
           <Link to="/" className={style.itemMenu}>
-            Home
+            Bolos e Tortas
           </Link>
         </Menu.Item>
         <Menu.Item
           key="2"
-          icon={<ShoppingOutlined className={style.itemMenu} />}
+          icon={
+            <span
+              className="material-symbols-outlined"
+              style={{ color: "#ffff", fontSize: "20px" }}
+            >
+              cookie
+            </span>
+          }
         >
-          <Link to="/pedidos" className={style.itemMenu}>
-            Pedidos
+          <Link to="/sobremesas" className={style.itemMenu}>
+            Sobremesas
           </Link>
         </Menu.Item>
-        <Menu.Item key="3" icon={<UploadOutlined className={style.itemMenu} />}>
-          <Link to="/nav3" className={style.itemMenu}>
-            nav 3
+        <Menu.Item
+          key="3"
+          icon={
+            <span
+              className="material-symbols-outlined"
+              style={{ color: "#ffff", fontSize: "20px" }}
+            >
+              bakery_dining
+            </span>
+          }
+        >
+          <Link to="/salgados" className={style.itemMenu}>
+            Salgados
+          </Link>
+        </Menu.Item>
+        <Menu.Item
+          key="4"
+          icon={
+            <span
+              className="material-symbols-outlined"
+              style={{ color: "#ffff", fontSize: "20px" }}
+            >
+              menu_book
+            </span>
+          }
+        >
+          <Link to="/kits" className={style.itemMenu}>
+            Kits
           </Link>
         </Menu.Item>
       </Menu>

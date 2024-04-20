@@ -6,7 +6,7 @@ import { InfoCircleOutlined } from "@ant-design/icons";
 const ErrorPage = () => {
   return (
     <div className={style.pagErro}>
-      <Row>
+      <Row className={style.rowImg}>
         <img src={imgBatedeira} />
       </Row>
       <Row>

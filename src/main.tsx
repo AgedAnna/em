@@ -7,7 +7,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.tsx";
 import ErrorPage from "./routes/ErrorPage/ErrorPage.tsx";
 import IndexHome from "./routes/Home/index.tsx";
-import IndexPedidos from "./routes/Pedidos/index.tsx";
+import IndexSobremesas from "./routes/Sobremesas/index.tsx";
+import IndexSalgados from "./routes/Salgados/index.tsx";
+import IndexKits from "./routes/Kits/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +18,9 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { path: "/", element: <IndexHome /> },
-      { path: "/pedidos", element: <IndexPedidos /> },
+      { path: "/sobremesas", element: <IndexSobremesas /> },
+      { path: "/salgados", element: <IndexSalgados /> },
+      { path: "/kits", element: <IndexKits /> },
     ],
   },
 ]);

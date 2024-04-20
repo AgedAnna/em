@@ -1,11 +1,12 @@
 import React from "react";
-import { Card } from "antd";
+import { Card, Tooltip } from "antd";
 import img from "../../public/imgs/IMG_3308.jpg";
 import img1 from "../../public/imgs/IMG_3309.jpg";
 import img2 from "../../public/imgs/IMG_5139.jpg";
 import img3 from "../../public/imgs/IMG_5156.jpg";
 import img4 from "../../public/imgs/IMG_5301.jpg";
 import ButtonSale from "../../components/Buttons/ButtonSale";
+import style from "./Home.module.css";
 
 const { Meta } = Card;
 
@@ -85,37 +86,20 @@ const items = [
 ];
 
 const CardCakes: React.FC = () => (
-  <div
-    style={{
-      display: "flex",
-      flexWrap: "wrap",
-      textAlign: "center",
-      alignItems: "flex-start", // Alterado para flex-start para garantir que os itens não se sobreponham
-      justifyContent: "center",
-    }}
-  >
+  <div className={style.cardsDiv}>
     {items.map((item, index) => (
       <Card
+        className={style.cards}
         key={index}
         hoverable
-        style={{
-          width: 240,
-          margin: "10px",
-          flexDirection: "column",
-          display: "flex",
-          alignItems: "center",
-          position: "relative",
-        }}
         cover={<img alt={item.description} src={item.img} />}
       >
-        <div style={{ alignSelf: "flex-start", marginBottom: "10px" }}>
+        <div style={{ marginBottom: "10px" }}>
           <ButtonSale onClick={() => {}} />
         </div>
-        <Meta
-          title={item.title}
-          description={item.price}
-          style={{ marginTop: "auto" }}
-        />
+        <Tooltip title={item.title} color={"#d5834a"}>
+          <Meta title={item.title} description={item.price}></Meta>
+        </Tooltip>
       </Card>
     ))}
   </div>

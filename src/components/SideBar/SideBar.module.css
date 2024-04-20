@@ -1,12 +1,13 @@
-.SideBar{
-    background-color: #D5834A !important;
+.SideBar {
+  background-color: #d5834a !important;
+  z-index: 1000;
 }
 
 .menu {
-    background-color: #D5834A;
-    color: #FFFF;
+  background-color: #d5834a;
+  color: #ffff;
 }
 
-.itemMenu{
-    color: #FFFF !important;
+.itemMenu {
+  color: #ffff !important;
 }

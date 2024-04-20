@@ -8,8 +8,12 @@
   flex-direction: column;
 }
 
+.rowImg{
+  padding-left: 7vh;
+}
+
 .pagErro img{
-    padding-left: 7vh;
+  width: 100%;
 }
 
 .icon {
